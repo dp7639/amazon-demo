@@ -11,4 +11,10 @@ export default NextAuth({
     // ...add more providers here
   ],
   secret: process.env.NEXTAUTH_SECRET,
+  callbacks: {
+    async jwt({ token }) {
+      token.userRole = "user"
+      return token
+    },
+  },
 });
