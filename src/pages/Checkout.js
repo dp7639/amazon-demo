@@ -69,9 +69,9 @@ function Checkout() {
       <div className="flex flex-col bg-white p-10 shadow-md">
        {items.length > 0 && (
         <>
-        <h2 className="whitespace-nowrap">SubTotal ({items.length} items): {" "} 
+        <h2 className="whitespace-nowrap">SubTotal ({items.length} items): {" "}
         <span className="font-bold">
-          <Currency quantity={total} Currency="INR" />
+          <Currency quantity={total} currency="INR" />
           </span>
         </h2>
         <button role="link" onClick={createCheckoutSession} disabled={!session} className={`button mt-2 ${!session && 'from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed'}`}>

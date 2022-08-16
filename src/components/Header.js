@@ -46,7 +46,7 @@ function Header() {
     <div onClick={()=>router.push('/Checkout')} className='relative link cursor-pointer flex items-center'>
       <span className='absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold'>{items.length}</span>
       <ShoppingCartIcon className='h-10' />
-      <p className='hidden md:inline font-extrabold md:text-sm mt-2'>Basket</p>
+      <p className='hidden md:inline font-extrabold md:text-sm mt-2'>Cart</p>
     </div>
     </div>
     </div>
@@ -56,15 +56,18 @@ function Header() {
         <MenuIcon className='h-6 mr-1' />
         All
       </p>
-      <p className='link'>Prime Video</p>
-      <p className='link'>Amazon Business</p>
+      <p className='link'>Best Sellers</p>
       <p className='link'>Today's Deals</p>
+      <p className='link'>Mobiles</p>
       <p className='link hidden lg:inline-flex'>Electronics</p>
-      <p className='link hidden lg:inline-flex'>Food & Grocery</p>
+      <p className='link hidden lg:inline-flex'>Customer Service</p>
+      <p className='link hidden lg:inline-flex'>Registry</p>
+      <p className='link hidden lg:inline-flex'>Gift Cards</p>
+      <p className='link hidden lg:inline-flex'>Sell</p>
+      <p className='link hidden lg:inline-flex'>Books</p>
       <p className='link hidden lg:inline-flex'>Prime</p>
-      <p className='link hidden lg:inline-flex'>Buy Again</p>
-      <p className='link hidden lg:inline-flex'>Shopper Toolkit</p>
-      <p className='link hidden lg:inline-flex'>Health & Personal care</p>
+      <p className='link hidden lg:inline-flex'>Fashion</p>
+      <p className='link hidden lg:inline-flex'>New Releases</p>
     </div>
     </header>
   )
